@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#183f35">
+  <meta name="description" content="声长：为你安排从美式发音、日常交流到观点辩论的口语训练。每天 30–60 分钟，按自己的进度前进。">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="./icon.svg">
+  <link rel="stylesheet" href="./styles.css">
+  <title>声长 · 一次开口，一点成长</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#today" aria-label="声长首页"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>声长<span class="brand-en">SPEAK & GROW</span></span></a>
+      <div class="sidebar-caption">把想说的，慢慢说出来。</div>
+      <nav class="main-nav" aria-label="主导航">
+        <a href="#today" data-nav="today"><span data-icon="sun"></span><span>今日练习</span></a>
+        <a href="#plan" data-nav="plan"><span data-icon="route"></span><span>成长路线</span></a>
+        <a href="#studio" data-nav="studio"><span data-icon="mic"></span><span>跟读练习室</span></a>
+        <a href="#records" data-nav="records"><span data-icon="chart"></span><span>成长记录</span></a>
+      </nav>
+      <div class="sidebar-bottom"><div class="little-plant" aria-hidden="true">✳</div><p>流利，来自一次次开口。<br>今天也给自己一点时间。</p><a href="#settings" class="settings-link"><span data-icon="settings"></span> 偏好与备份</a></div>
+    </aside>
+    <div class="main-shell">
+      <header class="topbar"><a class="mobile-brand" href="#today"><span class="brand-mark small" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>声长</a><span id="page-kicker">YOUR DAILY PRACTICE</span><div class="topbar-right"><span class="accent-badge"><span></span>通用美式</span><a class="icon-button" href="#settings" aria-label="偏好与备份"><span data-icon="settings"></span></a></div></header>
+      <main id="app" tabindex="-1"></main>
+      <footer class="page-footer">一小步，也算数。<span>专注练习 · 按进度前进</span></footer>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="modal"><div id="modal-content"></div><button class="icon-button modal-close" id="close-modal" aria-label="关闭"><span data-icon="close"></span></button></dialog>
+  <input type="file" id="backup-file" accept="application/json,.json" hidden>
+  <script src="./curriculum.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
